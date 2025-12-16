@@ -50,7 +50,7 @@ const Home = () => {
               <span className="text-indigo-600 dark:text-indigo-300">
                 Architecture & Réseau
               </span>{" "}
-              à l’ETNA ⚙️
+              à l’ETNA 🎓
             </h1>
 
             <p className="text-sm md:text-base text-slate-700 dark:text-slate-300 max-w-xl">
