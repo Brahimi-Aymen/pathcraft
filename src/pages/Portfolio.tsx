@@ -12,7 +12,7 @@ type Project = {
   subtitle: string;
   description: string;
   tags: string[];
-  image: string;
+  image: string; // <-- CORRECTION IMPORTANTE !
 };
 
 const PROJECTS: Project[] = [
@@ -66,7 +66,6 @@ const PROJECTS: Project[] = [
   },
 ];
 
-
 const Portfolio: React.FC = () => {
   return (
     <section
@@ -74,7 +73,6 @@ const Portfolio: React.FC = () => {
       className="bg-slate-50 dark:bg-slate-950 py-16 sm:py-20"
     >
       <div className="max-w-6xl mx-auto px-4 lg:px-6">
-        {/* Bloc d’intro */}
         <div className="mb-12 rounded-3xl bg-white/90 dark:bg-slate-900/85 border border-slate-200/70 dark:border-slate-800 px-6 sm:px-10 py-8 sm:py-10 shadow-sm">
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-slate-50 mb-4">
             Portfolio technique
@@ -103,14 +101,12 @@ const Portfolio: React.FC = () => {
           </div>
         </div>
 
-        {/* Grille des projets */}
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {PROJECTS.map((project) => (
             <article
               key={project.title}
               className="group overflow-hidden rounded-3xl border border-slate-200/70 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-md transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg"
             >
-              {/* IMAGE + titre/sous-titre dans l’image */}
               <div className="relative h-40 w-full overflow-hidden">
                 <img
                   src={project.image}
@@ -130,7 +126,6 @@ const Portfolio: React.FC = () => {
                 </div>
               </div>
 
-              {/* Corps de la carte */}
               <div className="px-6 py-5">
                 <p className="text-sm text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">
                   {project.description}
