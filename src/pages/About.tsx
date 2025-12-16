@@ -1,3 +1,5 @@
+import aymenPP from "../assets/aymen-pp.jpg";
+
 const About = () => {
   return (
     
