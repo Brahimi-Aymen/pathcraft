@@ -1,5 +1,6 @@
 const About = () => {
   return (
+    
     <div className="space-y-10">
       {/* HEADER + PHOTO */}
       <section className="rounded-3xl border px-6 py-8 md:px-10 md:py-10 bg-white border-slate-200 shadow-[0_18px_45px_rgba(15,23,42,0.08)] dark:bg-slate-950/80 dark:border-slate-800">
@@ -8,10 +9,11 @@ const About = () => {
           <div className="flex justify-center md:justify-start w-full md:w-auto">
             <div className="w-40 h-40 rounded-full overflow-hidden border-2 border-indigo-500 shadow-xl dark:shadow-md">
               <img
-                src="/images/aymen-pp.jpg"
+                src={aymenPP}
                 alt="Aymen Brahimi"
-                className="w-full h-full object-cover"
+                className="w-40 h-40 rounded-full object-cover border-4 border-indigo-400"
               />
+
             </div>
           </div>
 
