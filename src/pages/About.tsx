@@ -1,5 +1,3 @@
-import React from "react";
-
 import aymenPP from "../assets/aymen-pp.jpg";
 
 const About = () => {
