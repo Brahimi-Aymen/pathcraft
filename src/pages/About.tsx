@@ -9,11 +9,12 @@ const About = () => {
         <div className="flex flex-col md:flex-row items-center gap-6 md:gap-10">
           {/* PHOTO */}
           <div className="flex justify-center md:justify-start w-full md:w-auto">
-            <div className="w-40 h-40 rounded-full overflow-hidden border-2 border-indigo-500 shadow-xl dark:shadow-md">
+            <div className="relative w-40 h-40 rounded-full overflow-hidden">
+              <div className="absolute inset-0 border-4 border-indigo-500 rounded-full"></div>
               <img
                 src={aymenPP}
                 alt="Aymen Brahimi"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover rounded-full"
               />
             </div>
           </div>
