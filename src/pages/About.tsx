@@ -1,3 +1,5 @@
+import React from "react";
+
 import aymenPP from "../assets/aymen-pp.jpg";
 
 const About = () => {
@@ -13,9 +15,8 @@ const About = () => {
               <img
                 src={aymenPP}
                 alt="Aymen Brahimi"
-                className="w-40 h-40 rounded-full object-cover border-4 border-indigo-400"
+                className="w-full h-full object-cover"
               />
-
             </div>
           </div>
 
