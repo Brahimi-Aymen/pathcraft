@@ -14,7 +14,7 @@ const About = () => {
               <img
                 src={aymenPP}
                 alt="Aymen Brahimi"
-                className="w-full h-full object-cover rounded-full"
+                className="w-full h-full object-cover scale-110 rounded-full"
               />
             </div>
           </div>
