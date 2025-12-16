@@ -1,11 +1,18 @@
 import React from "react";
 
+import img1 from "../assets/portfolio_image_1.png";
+import img2 from "../assets/portfolio_image_2.png";
+import img3 from "../assets/portfolio_image_3.png";
+import img4 from "../assets/portfolio_image_4.png";
+import img5 from "../assets/portfolio_image_5.png";
+import img6 from "../assets/portfolio_image_6.png";
+
 type Project = {
   title: string;
   subtitle: string;
   description: string;
   tags: string[];
-  image: string; // propriété pour l'image
+  image: string;
 };
 
 const PROJECTS: Project[] = [
@@ -15,7 +22,7 @@ const PROJECTS: Project[] = [
     description:
       "Architecture complète avec VLAN, routage inter-réseaux, DHCP, DNS et supervision. Objectif : se rapprocher d’une infra de production segmentée.",
     tags: ["Cisco", "GNS3", "Debian", "Réseau"],
-    image: "/images/portfolio_image_1.png",
+    image: img1,
   },
   {
     title: "Services réseau sous Debian",
@@ -23,7 +30,7 @@ const PROJECTS: Project[] = [
     description:
       "Mise en place de serveurs DNS, DHCP, Samba, Postfix/Dovecot et supervision de base. Focus sur la fiabilité, la sécurité et la documentation.",
     tags: ["Linux", "Debian", "Services réseau"],
-    image: "/images/portfolio_image_2.png",
+    image: img2,
   },
   {
     title: "Scripts Bash d’automatisation",
@@ -31,7 +38,7 @@ const PROJECTS: Project[] = [
     description:
       "Scripts Bash pour automatiser la création d’utilisateurs, les sauvegardes, la rotation de logs et quelques tâches d’admin système récurrentes.",
     tags: ["Bash", "Automation", "Scripting"],
-    image: "/images/portfolio_image_3.png",
+    image: img3,
   },
   {
     title: "Containerisation avec Docker",
@@ -39,7 +46,7 @@ const PROJECTS: Project[] = [
     description:
       "Création d’images Docker, docker-compose, séparation des services (web, base de données, cache). Objectif : rendre le déploiement reproductible.",
     tags: ["Docker", "DevOps", "Containers"],
-    image: "/images/portfolio_image_4.png",
+    image: img4,
   },
   {
     title: "Site vitrine WordPress",
@@ -47,7 +54,7 @@ const PROJECTS: Project[] = [
     description:
       "Création d’un site vitrine professionnel pour une activité de menuiserie : mise en valeur des services, SEO de base et tunnel de contact.",
     tags: ["WordPress", "Web", "SEO"],
-    image: "/images/portfolio_image_5.png",
+    image: img5,
   },
   {
     title: "Outils & lab perso",
@@ -55,9 +62,10 @@ const PROJECTS: Project[] = [
     description:
       "Montage d’un lab perso pour tester des scénarios réseau / infra, faire des POC, et documenter les approches orientées production.",
     tags: ["Lab", "Homelab", "Expérimentation"],
-    image: "/images/portfolio_image_6.png",
+    image: img6,
   },
 ];
+
 
 const Portfolio: React.FC = () => {
   return (
